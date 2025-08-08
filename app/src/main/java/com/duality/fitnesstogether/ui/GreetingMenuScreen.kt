@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.sp
 import com.duality.fitnesstogether.R
 import com.duality.fitnesstogether.util.TextSnippets
 
-@SuppressLint("ResourceAsColor")
+
 @Composable
 fun GreetingMenuScreen(
     navigateToRegistration: () -> Unit,
