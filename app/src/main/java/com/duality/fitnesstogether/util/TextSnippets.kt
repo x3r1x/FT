@@ -7,6 +7,8 @@ import com.duality.fitnesstogether.R
 
 object TextSnippets {
     val robotoFont = FontFamily(
-        Font(R.font.roboto_semibold, FontWeight.SemiBold)
+        Font(R.font.roboto_semibold, FontWeight.SemiBold),
+        Font(R.font.roboto_medium, FontWeight.Medium),
+        Font(R.font.roboto_regular, FontWeight.Normal)
     )
 }

@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.duality.fitnesstogether.ui.registration.RegistrationPage1
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -12,6 +13,9 @@ object GreetingMenu
 
 @Serializable
 object RegistrationPage1
+
+@Serializable
+object RegistrationPage2
 
 @Serializable
 object LoginPage
@@ -32,11 +36,14 @@ fun AppNavHost(
         }
 
         composable<RegistrationPage1> {
-
+            RegistrationPage1(
+                onBack = { navController.popBackStack() },
+                onNext = { navController.navigate(route = RegistrationPage2) }
+            )
         }
 
-        composable<LoginPage> {
+        composable<RegistrationPage2> {}
 
-        }
+        composable<LoginPage> {}
     }
 }

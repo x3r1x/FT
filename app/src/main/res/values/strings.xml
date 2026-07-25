@@ -4,4 +4,7 @@
     <string name="together">Together</string>
     <string name="register">Зарегистрироваться</string>
     <string name="login">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="fillInfoAboutYourself">Заполните данные о себе</string>
+    <string name="name">Имя</string>
 </resources>
